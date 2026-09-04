@@ -1,0 +1,17 @@
+[Unit]
+Description=NerdyKnights Tax Discord Bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+DynamicUser=yes
+WorkingDirectory=/repos/osrs-discord-taxbot
+ExecStart=/repos/osrs-discord-taxbot/venv/bin/python3 /repos/osrs-discord-taxbot/tax_channel_bot.py
+Restart=always
+RestartSec=5
+StateDirectory=taxbot
+Environment=DISCORD_TOKEN=your_token_here
+
+[Install]
+WantedBy=multi-user.target

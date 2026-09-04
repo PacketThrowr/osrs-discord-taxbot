@@ -1,0 +1,18 @@
+# Runtime state — never commit live claims
+tax_bot_state.json
+
+# Virtual environment
+venv/
+
+# Python cruft
+__pycache__/
+*.py[cod]
+
+# Editor/OS noise
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Local env files (in case a token ever lands in one)
+.env
