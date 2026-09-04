@@ -176,7 +176,7 @@ Only one active tax channel is configured at a time.
 From a control channel, change the event title without editing the Python file:
 
 ```text
-@taxbot title NerdyKnights Fall Raid Rush
+@taxbot title <:NerdsUnite:1267899525192880220> NerdyKnights 2026 Fall Bingo <:NerdsUnite:1267899525192880220>
 ```
 
 The new title is saved in `tax_bot_state.json` and the existing tax-channel header is updated immediately. The title persists across bot restarts.
@@ -187,11 +187,6 @@ To display the current title:
 @taxbot title
 ```
 
-The bot also accepts:
-
-```text
-@taxbot tax title NerdyKnights Fall Raid Rush
-```
 
 ### List Taxes
 
